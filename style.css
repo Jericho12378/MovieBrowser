@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+}
+html{
+    scroll-behavior: smooth ;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+
+/*
+    NAV
+*/
+.my__logo{
+   color: white;
+   background-color: rgb(115, 130, 138);
+   border-radius: 12px;
+}
+.fa-film{
+    width: 100%;
+    font-size: 32px;
+    margin: 8px;
+    
+
+}
+
+nav{
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size:cover;
+    width: 100%;
+    padding: 24px 20%;
+    
+}
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav__link--lists{
+    display: flex;
+}
+.nav__link--list{
+   display: flex;
+}
+.nav__anchor{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.nav__input--wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;   
+}
+.nav__link--special{
+    border-radius: 24px;
+    margin: 0 24px;
+    background-color: white;
+    padding: 12px 40px;
+    transition: all 300ms ease;
+}
+.nav__link--special:hover{
+    background-color: rgb(201, 38, 38);
+    color: white;
+}
+.nav__anchor--special{
+    margin-right: 0;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+ .nav__anchor--special:hover{
+    border-bottom: none;
+    color: white;
+} 
+
+#inputfield{
+    
+    color: solid white;
+    width: 100%;
+    max-width: 800px;
+    height: 60px;
+    font-size: 20px;
+    padding-left: 20px;
+    outline: none;
+    border: solid black;
+    border-radius: 48px;
+}
+.fa-magnifying-glass{
+   
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index:1;
+    padding: 12px 20px 0 0px;
+    color: black;
+    font-size: 32px;
+    transition: all .2s ease;
+}
+.landing_title_wrapper{
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.intro__title{
+    font-size: 42px;
+    margin-top: 24px;
+}
+
+/*
+    MAIN
+*/
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 36px;
+}
+.row{
+    width: 100%;
+    max-width: 1200px;
+   
+}
+
+.mainpage__header{
+    padding: 0 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+select{
+    margin: 24px;
+    font-size: 16px;
+    border: solid rgb(151, 134, 134);
+}
+option{
+    padding: 12px 24px;
+    font-size: 14px;
+}
+.movies{
+    flex-wrap: wrap;
+    display: flex;
+}
+.movie{
+    cursor: pointer;
+    width: 25%;
+    padding: 24px;
+    
+}
+.movie:hover{
+   
+    transform: scale(1.07);
+    transition: all 300ms ease;
+}
+.movie__image--wrapper{
+  border-radius: 12px;
+  overflow: hidden;
+   
+}
+.movie__img{
+    max-height: 380px;
+    transition: all 300ms ease;
+}
+.movie__title,
+.movie__year{
+    text-align: center;
+}
+
+/*
+    FOOTER
+*/
+.footer__links{
+    color: white;
+}
+.nav__link{
+    display: flex;
+    
+}
+.nav__links{
+    
+    margin: 0 24px;
+}
+footer{
+    
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7% 0;
+    color: white;
+}
+.links__wrapper{
+    display: flex;
+    justify-content: center;
+    
+}
+.copyright{
+    margin-top: 132px;
+    text-align: center;
+}
+
+/*
+    HOVER
+*/
+.hover__effect{
+    position: relative;
+}
+.hover__effect:after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+}
+.hover__effect--color:after{
+    background-color: white;
+}
+.hover__effect:hover:after{
+    left: 0;
+    width: 100%;
+}

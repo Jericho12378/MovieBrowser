@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/619438713c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="landing__page">
+      <nav>
+        <div class="nav__wrapper">
+          <figure class="my__logo">
+            <i class="fa-solid fa-film"></i>
+          </figure>
+          <ul class="nav__link--lists">
+            <li class="nav__link--list"><a class="nav__anchor hover__effect 
+                hover__effect--color" href="">Home</a></li>
+            <li class="nav__link--list">
+              <a class="nav__anchor hover__effect 
+              hover__effect--color" href="#main">Movies</a>
+            </li>
+            <li class="nav__link--list nav__link--special">
+              <a class="nav__anchor nav__anchor--special " href="">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="landing_title_wrapper">
+          <h1 class="intro__title">Browse Movies Here for free</h1>
+          <div class="nav__input--wrapper">
+            <input
+              type="text"
+              id="inputfield"
+              oninput="searchMovie()"
+              placeholder="Type the title of the movie"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section id="main">
+      <div class="container">
+        <div class="row">
+          <div class="mainpage__header">
+            <h2>Search Results:</h2>
+            <div>
+              <select id="fiter" onchange="filterBooks(event)">
+                <option value="" disabled selected>Sort</option>
+                <option value="YearAscending">Year Ascending</option>
+                <option value="YearDescending">Year Descending</option>
+              </select>
+            </div>
+          </div>
+          <div class="movies">
+            <div class="movie">
+              <!-- <figure class="movie__image--wrapper">
+                      <img class="movie__img" src="https://m.media-amazon.com/images/M/MV5BNDE2NTIyMjg2OF5BMl5BanBnXkFtZTYwNDEyMTg3._V1_SX300.jpg" alt="">
+                    </figure>
+                    <div class="movie__title">
+                       <h3>Scary Movie 3</h3>
+                    </div>
+                    <div class="movie__year">
+                      <p>2003</p>
+                    </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="links__wrapper">
+            <ul class="nav__link">
+              <li class="nav__links">
+                <a class="footer__links 
+                hover__effect 
+                hover__effect--color
+                " href="">Contact</a>
+              </li>
+              <li class="nav__links">
+                <a class="footer__links
+                hover__effect 
+                hover__effect--color
+                " href="#landing__page">Home</a>
+              </li>
+              <li class="nav__links">
+                <a class="footer__links
+                hover__effect 
+                hover__effect--color
+                " href="">About</a>
+              </li>
+              <li class="nav__links">
+                <a class="footer__links
+                hover__effect 
+                hover__effect--color
+                " href="#main">Movies</a>
+              </li>
+            </ul>
+            </div>
+          <div class="copyright">
+            <p>Copyright © 2022 Jericho Ferriol</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
