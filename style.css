@@ -152,11 +152,11 @@ nav{
 select{
     margin: 24px;
     font-size: 16px;
-    border: solid rgb(151, 134, 134);
+    
 }
 option{
     padding: 12px 24px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .movies{
     flex-wrap: wrap;
@@ -241,4 +241,45 @@ footer{
 .hover__effect:hover:after{
     left: 0;
     width: 100%;
+}
+
+/*
+    RESPONSIVE!!
+*/
+
+@media(max-width: 768px){
+    .intro__title{
+        font-size: 20px;
+    }
+    .nav__anchor{
+        font-size: 14px;
+    }
+    .nav__link--special{
+        margin: 0 14px;
+        padding: 8px 12px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    option,
+    select
+    {
+        font-size: 12px;
+        font-size: 12px;
+    }
+    .movie{
+        width: 150px;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .movie__img{
+        width: 100%;
+        height: 160px;
+    }
+    input{
+        padding: 8px;
+    }
+    input::placeholder{
+        font-size: 16px;
+    }
 }
