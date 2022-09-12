@@ -247,19 +247,26 @@ footer{
     RESPONSIVE!!
 */
 
-@media(max-width: 768px){
+@media(max-width: 480px){
     .intro__title{
-        font-size: 20px;
+        font-size: 18px;
     }
     .nav__anchor{
         font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .my__logo{
+        z-index: -1;
     }
     .nav__link--special{
-        margin: 0 14px;
+        margin: 0 2px;
         padding: 8px 12px;
     }
     h2{
         font-size: 14px;
+        
     }
     option,
     select
@@ -267,10 +274,16 @@ footer{
         font-size: 12px;
         font-size: 12px;
     }
+    .mainpage__header{
+        padding: 0 24px;
+    }
     .movie{
         width: 150px;
         font-size: 14px;
         padding: 10px;
+    }
+    .movies{
+        padding: 12px;
     }
     .movie__img{
         width: 100%;
@@ -280,6 +293,6 @@ footer{
         padding: 8px;
     }
     input::placeholder{
-        font-size: 16px;
+        font-size: 12px;
     }
 }
