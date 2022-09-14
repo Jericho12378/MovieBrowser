@@ -27,3 +27,10 @@ async function main() {
 }
 
 main();
+
+function moveToHome_main(){
+    window.open().location.href = `${window.location.origin}/index.html#main`
+}
+function moveToHome(){
+    window.open().location.href = `${window.location.origin}/index.html`
+}
